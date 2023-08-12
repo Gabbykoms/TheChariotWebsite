@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<div class="news-posts">
+    {% for post in posts %}
+      <div class="post">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <!-- Additional fields and formatting as needed -->
+      </div>
+    {% endfor %}
+  </div>
+{%endblock%}
